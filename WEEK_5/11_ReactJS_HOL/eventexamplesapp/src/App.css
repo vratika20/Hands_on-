@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.app-title h1 {
+  margin-bottom: 8px;
+  font-size: 36px;
+}
+
+.app-title p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 420px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.counter {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.decrement-button {
+  background: #dc2626;
+}
+
+.welcome-button {
+  background: #7c3aed;
+}
+
+.click-button {
+  background: #0f766e;
+}
+
+.converter-title {
+  color: #15803d;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+}
+
+.submit-button {
+  width: 100%;
+  background: #15803d;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  .button-container {
+    grid-template-columns: 1fr;
+  }
+}

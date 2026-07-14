@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3eee6;
+  color: #2e2925;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.blog-header {
+  background: #26382f;
+  color: #ffffff;
+  text-align: center;
+  padding: 55px 20px;
+  border-bottom: 5px solid #b88b4a;
+}
+
+.header-label {
+  margin: 0 0 15px;
+  color: #d5b47c;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.blog-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 46px;
+  font-weight: normal;
+}
+
+.header-description {
+  margin: 16px auto 0;
+  color: #d8ddd9;
+  font-size: 15px;
+}
+
+.details-container {
+  width: 88%;
+  max-width: 1150px;
+  margin: 55px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fffdf9;
+  border: 1px solid #d9d0c3;
+}
+
+.details-section {
+  min-height: 470px;
+  padding: 38px;
+}
+
+.details-section:not(:last-child) {
+  border-right: 2px solid #788d78;
+}
+
+.section-number {
+  margin: 0 0 25px;
+  color: #b88b4a;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.details-section h2 {
+  margin: 0;
+  color: #26382f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+}
+
+.title-line {
+  width: 45px;
+  height: 2px;
+  margin: 15px 0 30px;
+  background: #b88b4a;
+}
+
+.detail-item {
+  margin-bottom: 28px;
+}
+
+.detail-item h3 {
+  margin: 0 0 8px;
+  color: #332d28;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.detail-item p {
+  margin: 5px 0;
+}
+
+.price {
+  color: #8a6334;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.author {
+  color: #7c5e3f;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.description {
+  color: #6c645c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.course-date {
+  color: #7b746d;
+  font-size: 13px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: #7b746d;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 850px) {
+  .details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .details-section {
+    min-height: auto;
+  }
+
+  .details-section:not(:last-child) {
+    border-right: none;
+    border-bottom: 2px solid #788d78;
+  }
+
+  .blog-header h1 {
+    font-size: 36px;
+  }
+}
