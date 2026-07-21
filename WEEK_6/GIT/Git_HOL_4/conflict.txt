@@ -1,1 +1,2 @@
-Version 2 from main branch
+  Version 2 from main branch
+Version 2 from conflict branch
